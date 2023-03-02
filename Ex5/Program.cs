@@ -1,13 +1,10 @@
-﻿using Microsoft.VisualBasic;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
-namespace ex4
+namespace Ex5
 {
     internal class Program
     {
@@ -18,7 +15,7 @@ namespace ex4
             public void getdata()
             {
                 Console.Write("Enter branch code: ");
-                bcode=int.Parse(Console.ReadLine());
+                bcode = int.Parse(Console.ReadLine());
                 Console.Write("Enter branch name: ");
                 bname = Console.ReadLine();
                 Console.Write("Enter branch address: ");
@@ -32,7 +29,7 @@ namespace ex4
             }
         }
 
-        public class employee:branches      // inheriting branches class here
+        public class employee : branches      // inheriting branches class here
         {
             public int empid, empage;
             public string empname, empaddress;
@@ -56,16 +53,47 @@ namespace ex4
                 Console.WriteLine("Employee Name: " + empname);
                 Console.WriteLine("Employee age: " + empage);
                 Console.WriteLine("Employee address: " + empaddress);
-            }  
+            }
         }
-        
+        public class salary : employee
+        {
+            public double basic, da, hra, gross;
+            public void getsaldetails()
+            {
+                Console.Write("Enter basic salary: ");
+                basic=double.Parse(Console.ReadLine());
+            }
+            public void calculate()
+            {
+                da = 0.4 * basic;
+                hra = 0.3 * basic;
+                gross = basic + da + hra;
+            }
+            public void displaysaldetails()
+            {
+                Console.WriteLine("Branch Code is: " + bcode);
+                Console.WriteLine("Branch name is: " + bname);
+                Console.WriteLine("Branch address is: " + baddress);
+                Console.WriteLine("Employee Id: " + empid);
+                Console.WriteLine("Employee Name: " + empname);
+                Console.WriteLine("Employee age: " + empage);
+                Console.WriteLine("Employee address: " + empaddress);
+                Console.WriteLine("Employee basic salary: " + basic);
+                Console.WriteLine("Employee da is: " + da);
+                Console.WriteLine("Employee hra is: " + hra);
+                Console.WriteLine("Employee gross salary: " + gross);
+            }
+        }
         static void Main(string[] args)
         {
-            employee emp = new employee();
-            emp.getdata();
-            emp.getempdata();
-            emp.displaydata();
-            emp.displayempdata();
+            salary sa = new salary();
+            sa.getdata();
+            sa.getempdata();
+            sa.displaydata();
+            sa.displayempdata();
+            sa.getsaldetails();
+            sa.calculate();
+            sa.displaysaldetails();
             Console.ReadLine();
         }
     }
