@@ -37,6 +37,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "userdefineddefaultconstruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "parameterizedconstructor_ex16", "parameterizedconstructor_ex16\parameterizedconstructor_ex16.csproj", "{3E7047A7-3D6D-4B6E-AF4A-4F9B53F10419}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "copyconstructor_ex17", "copyconstructor_ex17\copyconstructor_ex17.csproj", "{B2745BE2-A485-465A-B6C7-87D483FE4952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "staticconstructor_ex18", "staticconstructor_ex18\staticconstructor_ex18.csproj", "{9F2265FF-6E66-4744-8D17-821634FF7CC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +115,14 @@ Global
 		{3E7047A7-3D6D-4B6E-AF4A-4F9B53F10419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E7047A7-3D6D-4B6E-AF4A-4F9B53F10419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E7047A7-3D6D-4B6E-AF4A-4F9B53F10419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2745BE2-A485-465A-B6C7-87D483FE4952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2745BE2-A485-465A-B6C7-87D483FE4952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2745BE2-A485-465A-B6C7-87D483FE4952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2745BE2-A485-465A-B6C7-87D483FE4952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F2265FF-6E66-4744-8D17-821634FF7CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F2265FF-6E66-4744-8D17-821634FF7CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F2265FF-6E66-4744-8D17-821634FF7CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F2265FF-6E66-4744-8D17-821634FF7CC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
