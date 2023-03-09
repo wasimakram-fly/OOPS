@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace staticconstructor_ex18
 {
-    public class a
-        
+    public class a     
     {
         static a()            
         {
