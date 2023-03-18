@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interface_ex24", "interface
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "partialclass_ex25", "partialclass_ex25\partialclass_ex25.csproj", "{57EC25AF-1EDC-4E54-A015-8C055166E52A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sealedclass_ex26", "sealedclass_ex26\sealedclass_ex26.csproj", "{9AE0790A-757A-4EB0-A487-79162DD133FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{57EC25AF-1EDC-4E54-A015-8C055166E52A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57EC25AF-1EDC-4E54-A015-8C055166E52A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57EC25AF-1EDC-4E54-A015-8C055166E52A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE0790A-757A-4EB0-A487-79162DD133FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE0790A-757A-4EB0-A487-79162DD133FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE0790A-757A-4EB0-A487-79162DD133FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE0790A-757A-4EB0-A487-79162DD133FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
