@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 namespace Ex5
 {
     internal class Program
-    {
-        public class branches
+    {           // example of multilevel inheritance
+        public class branches       // base class
         {
             public int bcode;
             public string bname, baddress;

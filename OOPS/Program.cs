@@ -6,28 +6,43 @@ using System.Threading.Tasks;
 
 namespace OOPS
 {
+    class Employee
+    {
+        public int Empid;
+        public string Empname;
+        public double GrossPay;
+        double TaxDeduction = 0.1; // 10%
+        double netSalary;
+
+        public Employee(int Eid, string Ename, double Egrosspay)
+        {
+            this.Empid = Eid;
+            this.Empname = Ename;
+            this.GrossPay = Egrosspay;
+        }
+
+        private void CalculateSalary()
+        {
+            if (GrossPay >= 30000)
+            {
+                netSalary = GrossPay - (TaxDeduction * GrossPay);
+                Console.WriteLine("Your Salary is: {0}", netSalary);
+            }
+            else
+            {
+                Console.WriteLine("Your Salary is: {0}", GrossPay);
+            }
+        }
+        public void showDetails()
+        {
+            this.CalculateSalary();
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
         {
-            int n = 8;
-
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    if ((i + j) % 2 == 0)
-                    {
-                        Console.Write(" + " + " ");
-                    }
-                    else
-                    {
-                        Console.Write(" - " + " ");
-                    }
-                }
-                Console.WriteLine();
-            }
-            Console.ReadLine();
+                        
         }
     }
 }
